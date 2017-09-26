@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    color: #1e1f22;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, a, div, span {
+    font-family: l10regular, -apple-system-body, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Ubuntu, "Fira Sans", Arial, sans-serif;
+}
+
+.simple-nav {
+    margin-top: 64px;
+}
+
+.simple-nav .list-group-item {
+    border-color: transparent;
+}
+
+.simple-nav a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888888;
+    transition: color 0.2s ease;
+}
+
+.simple-nav a:hover {
+    color: #2f2f2f;
+}
+
+.section-block {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
