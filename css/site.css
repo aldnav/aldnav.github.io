@@ -4,7 +4,7 @@ html, body {
 }
 
 html, body, h1, h2, h3, h4, h5, h6, a, div, span {
-    font-family: l10regular, -apple-system-body, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Ubuntu, "Fira Sans", Arial, sans-serif;
+    font-family: l10regular, -apple-system-body, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Ubuntu, "Fira Sans", Arial, "Open Sans", sans-serif;
 }
 
 .simple-nav {
@@ -29,4 +29,9 @@ html, body, h1, h2, h3, h4, h5, h6, a, div, span {
 .section-block {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.section-block article {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
