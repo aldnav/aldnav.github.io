@@ -7,6 +7,31 @@ html, body, h1, h2, h3, h4, h5, h6, a, div, span {
     font-family: l10regular, -apple-system-body, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Ubuntu, "Fira Sans", Arial, "Open Sans", sans-serif;
 }
 
+.big-wrapper {
+    padding-top: 80px;
+}
+
+.intro-cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro-cover .intro-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px 60px;
+}
+
+.intro-cover .intro-description {
+    margin-left: 20px;
+}
+
+.non-primary {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 300;
+}
+
 .simple-nav {
     margin-top: 64px;
 }
@@ -29,9 +54,44 @@ html, body, h1, h2, h3, h4, h5, h6, a, div, span {
 .section-block {
     padding-top: 24px;
     padding-bottom: 24px;
+    font-size: 14px;
 }
 
 .section-block article {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+
+.section-title {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-collection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.portfolio-item {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.portfolio-details {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.portfolio-tag .tag-item {
+    display: inline;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
 }
