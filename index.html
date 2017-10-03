@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/site.css">
+    
   </head>
   <body>
     <div class="container big-wrapper">
@@ -36,61 +37,39 @@
           <section id="portfolio" class="section-block">
               <h5 class="section-title">Portfolio</h5>
               <hr>
-                <div class="portfolio-collection">
-                  <div class="portfolio-item">
-                      <div class="portfolio-details">
-                          <div class="portfolio-title">Bird Repo</div>
-                          <div class="portfolio-description">A Bird search application that uses Wikipedia API and Macaulay Library
-                          </div>
-                          <div class="portfolio-tag">
-                              <div class="tag-item">JavaScript</div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="portfolio-item">
-                      <div class="portfolio-details">
-                          <div class="portfolio-title">RTextAreaJS</div>
-                          <div class="portfolio-description">Simple plugin to turn contenteditable div to Rich Text Editor-like widget.
-                          </div>
-                          <div class="portfolio-tag">
-                              <div class="tag-item">JavaScript</div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="portfolio-item">
-                      <div class="portfolio-details">
-                          <div class="portfolio-title">eventure</div>
-                          <div class="portfolio-description">Activity stream for Django
-                          </div>
-                          <div class="portfolio-tag">
-                              <div class="tag-item">Python</div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="portfolio-item">
-                      <div class="portfolio-details">
-                          <div class="portfolio-title">muzik</div>
-                          <div class="portfolio-description">Collate weekly top tracks using Spotifycharts, Musicbrainz and Last.Fm
-                          </div>
-                          <div class="portfolio-tag">
-                              <div class="tag-item">Python</div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
+              <article>
+                On my free time I work on projects for fun or learning <i>(and most of the times both)</i>. Here are a few of my projects:
+              </article>
+                <div class="portfolio-collection"></div>
                 <div class="see-more text-center">
                     <a href="http://github.com/aldnav" target="_blank" class="btn btn-secondary btn-sm">See more</a>
                 </div>
           </section>
-          <!-- <section id="blog" class="section-block">
+          <section id="blog" class="section-block">
             <h5 class="section-title">Blog</h5>
             <hr>
-          </section> -->
+          </section>
         </div>
       </div>
     </div>
-    <script src="css/jquery-3.2.1.slim.min.js"></script>
-    <script src="css/popper.min.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/require.js"></script>
+    <script src="js/require-config.js"></script>
+    <script src="js/main.js"></script>
+    <script id="tmpl-portfolio" type="x-tmpl-mustache">
+    <div class="portfolio-item">
+        <div class="portfolio-details">
+            <div class="portfolio-title">{{ title }}</div>
+            <div class="portfolio-description">{{ description }}</div>
+            <div class="portfolio-tag">
+                {{ #tags }}
+                <div class="tag-item">{{ . }}</div>
+                {{ /tags}}
+            </div>
+        </div>
+    </div>
+    </script>
   </body>
 </html>

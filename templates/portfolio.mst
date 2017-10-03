@@ -1,0 +1,11 @@
+<div class="portfolio-item">
+    <div class="portfolio-details">
+        <div class="portfolio-title">{{ title }}</div>
+        <div class="portfolio-description">{{ description }}</div>
+        <div class="portfolio-tag">
+            {{ #tags }}
+            <div class="tag-item">{{ . }}</div>
+            {{ /tags}}
+        </div>
+    </div>
+</div>
