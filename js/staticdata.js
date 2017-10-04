@@ -9,18 +9,22 @@ define(function() {
         projects: [{
             title: 'Bird Repo',
             description: 'A Bird search application that uses Wikipedia API and Macaulay Library',
-            tags: ['JavaScript']
+            url: 'https://github.com/aldnav/bird-repo',
+            tags: ['JavaScript'],
         }, {
             title: 'eventure',
             description: 'Activity stream for Django',
+            url: 'https://github.com/aldnav/eventure',
             tags: ['Python']
         }, {
             title: 'RTextAreaJS',
             description: 'Simple plugin to turn contenteditable div to Rich Text Editor-like widget',
+            url: 'https://github.com/aldnav/rtextareajs',
             tags: ['JavaScript']
         }, {
             title: 'muzik',
             description: 'Collate weekly top tracks using Spotifycharts, Musicbrainz and Last.Fm',
+            url: 'https://github.com/aldnav/muzik',
             tags: ['Python']
         }]
     };

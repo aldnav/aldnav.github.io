@@ -95,3 +95,34 @@ html, body, h1, h2, h3, h4, h5, h6, a, div, span {
     color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+.portfolio-url,
+.portfolio-url:hover,
+.portfolio-url:hover .portfolio-url > * {
+    text-decoration: none;
+    color: black;
+}
+.portfolio-url:hover .portfolio-title {
+    color: #0056b3;
+}
+
+
+.blog-item {
+    width: 420px;
+}
+.blog-title {
+    font-weight: 300;
+}
+.blog-date {
+    font-size: 12px;
+}
+.blog-url,
+.blog-url:hover,
+.blog-url:hover .blog-date,
+.blog-url:hover .blog-description {
+    text-decoration: none;
+    color: black;
+}
+.blog-url:hover .blog-title {
+    color: #0056b3;
+}
