@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    color: #1e1f22;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, a, div, span {
+    font-family: l10regular, -apple-system-body, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Ubuntu, "Fira Sans", Arial, "Open Sans", sans-serif;
+}
+
+.big-wrapper {
+    padding-top: 80px;
+}
+
+.intro-cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro-cover .intro-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px 60px;
+}
+
+.intro-cover .intro-description {
+    margin-left: 20px;
+}
+
+.non-primary {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 300;
+}
+
+.simple-nav {
+    margin-top: 64px;
+}
+
+.simple-nav .list-group-item {
+    border-color: transparent;
+}
+
+.simple-nav a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888888;
+    transition: color 0.2s ease;
+}
+
+.simple-nav a:hover {
+    color: #2f2f2f;
+}
+
+.section-block {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+
+.section-block article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.section-title {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-collection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.portfolio-item {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.portfolio-details {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.portfolio-tag .tag-item {
+    display: inline;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-url,
+.portfolio-url:hover,
+.portfolio-url:hover .portfolio-url > * {
+    text-decoration: none;
+    color: black;
+}
+.portfolio-url:hover .portfolio-title {
+    color: #0056b3;
+}
+
+
+.blog-item {
+    width: 420px;
+}
+.blog-title {
+    font-weight: 300;
+}
+.blog-date {
+    font-size: 12px;
+}
+.blog-url,
+.blog-url:hover,
+.blog-url:hover .blog-date,
+.blog-url:hover .blog-description {
+    text-decoration: none;
+    color: black;
+}
+.blog-url:hover .blog-title {
+    color: #0056b3;
+}

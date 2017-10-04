@@ -1,5 +1,94 @@
-♫ The world will only distract me from my great work. That's why I built this plastic submarine ♫
-
-You must be brought here by mistake. Site is under construction. Really really soon!
-Excited? Me too!
-(Monkeys are working on this site... Don't feed them.)
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aldrin Navarro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+  </head>
+  <body>
+    <div class="container big-wrapper">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="list-group simple-nav">
+            <a href="#hi" class="list-group-item">HI!</a>
+            <a href="#portfolio" class="list-group-item">PORTFOLIO</a>
+            <a href="#blog" class="list-group-item">BLOG</a>
+            <a href="#impossible-list" class="list-group-item">IMPOSSIBLE LIST</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <section id="hi" class="section-block">
+            <div class="intro-cover">
+                <img src="img/avatar.png" alt="Aldrin Navarro" class="intro-avatar">
+                <div class="intro-description">
+                    <h4>Hi! I'm Aldrin Navarro</h4>
+                    <h5 class="non-primary">Web Developer</h5>
+                </div>
+            </div>
+            <article>
+                <hr>
+                I work as a web developer at a start-up company based in Cebu, PH. Python and Javascript are the two languages on my main arsenal. I work primarily with Django
+                and I'm openly exploring other technologies too <i>(because that's what I do)</i>.
+            </article>
+          </section>
+          <section id="portfolio" class="section-block">
+              <h5 class="section-title">Portfolio</h5>
+              <hr>
+              <article>
+                On my free time I work on projects for fun or learning <i>(and most of the times both)</i>. Here are a few of my projects:
+              </article>
+                <div class="portfolio-collection"></div>
+                <div class="see-more text-center">
+                    <a href="http://github.com/aldnav" target="_blank" class="btn btn-secondary btn-sm"><i class="fa fa-github" aria-hidden="true"></i> See more</a>
+                </div>
+          </section>
+          <section id="blog" class="section-block">
+            <h5 class="section-title">Blog</h5>
+            <hr>
+            <article>
+                I occasionally write articles about anything! You may find articles that interest you. <i>(I really appreciate if you leave a clap :) )</i>
+            </article>
+            <div class="blog-collection"></div>
+            <div class="see-more text-center">
+                <a href="https://medium.com/aldrins-blog" target="_blank" class="btn btn-success btn-sm"><i class="fa fa-medium" aria-hidden="true"></i>
+ Read more articles on Medium</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/require.js"></script>
+    <script src="js/require-config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/f6684881da.js"></script>
+    <script id="tmpl-portfolio" type="x-tmpl-mustache">
+        <div class="portfolio-item">
+            <div class="portfolio-details">
+                <a href="{{ url }}" target="_blank" class="portfolio-url">
+                    <div class="portfolio-title">{{ title }}</div>
+                    <div class="portfolio-description">{{ description }}</div>
+                </a>
+                <div class="portfolio-tag">
+                    {{ #tags }}
+                    <div class="tag-item">{{ . }}</div>
+                    {{ /tags}}
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="tmpl-blog" type="x-tmpl-mustache">
+        <a href="{{ url }}" target="_blank" class="blog-url">
+            <div class="blog-item mx-auto text-center">
+                <h5 class="blog-title">{{ title }}</h5>
+                <span class="blog-date">Published {{ date }}</span>
+                <p class="blog-description">{{ summary }}</p>
+            </div>
+        </a>
+    </script>
+  </body>
+</html>
