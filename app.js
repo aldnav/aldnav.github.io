@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+const port = process.env.A_PORT || 3000;
 
 app.get('/', (req, res) => res.sendFile(__dirname + '/public/index.html'));
 
-app.use(express.static('public'));
+app.use('/static', express.static('public'));
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));

@@ -5,7 +5,7 @@
         window.require = config;
     }
 })({
-    baseUrl: 'js',
+    baseUrl: 'static/js',
     paths: {
         jquery: 'jquery-3.2.1.slim.min',
         mustache: 'mustache.min',
