@@ -22,4 +22,16 @@ require([
         }
     });
 
+    marked.setOptions({
+      renderer: new marked.Renderer(),
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false,
+      xhtml: false
+    });
+    $('#the-list').html(marked($('#the-list').text()));
 });

@@ -186,3 +186,37 @@ html, body, h1, h2, h3, h4, h5, h6, a, div, span {
   }
 }
 
+.quote {
+    padding-top: 24px;
+    line-height: 6px;
+}
+.quote h6 i {
+    font-weight: 400 !important;
+}
+#impossible-list a {
+    color: #0056b3;
+}
+#impossible-list a:hover {
+    text-decoration: none;
+    color: #369fc1;
+}
+
+/*// Extra small devices (portrait phones, less than 480px)*/
+@media (max-width: 479px) {
+    .big-wrapper {
+        padding-top: 0;
+    }
+    .simple-nav {
+        margin-top: 20px;
+    }
+}
+
+/*// Small devices (landscape phones, 480px and up)*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .big-wrapper {
+        padding-top: 0;
+    }
+    .simple-nav {
+        margin-top: 20px;
+    }
+}
