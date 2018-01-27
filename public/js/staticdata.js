@@ -26,6 +26,16 @@ define(function() {
             description: 'Collate weekly top tracks using Spotifycharts, Musicbrainz and Last.Fm',
             url: 'https://github.com/aldnav/muzik',
             tags: ['Python']
+        }, {
+            title: 'Cebu Routes',
+            description: 'Jeepney routes for Metro Cebu',
+            url: 'https://github.com/aldnav/cebu-routes',
+            tags: ['Python']
+        }, {
+            title: 'Weather Now',
+            description: 'A command line interface for to tell weather forecast',
+            url: 'https://github.com/aldnav/weathernow',
+            tags: ['Shell']
         }]
     };
 });
