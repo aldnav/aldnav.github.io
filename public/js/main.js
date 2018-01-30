@@ -34,4 +34,22 @@ require([
       xhtml: false
     });
     $('#the-list').html(marked($('#the-list').text()));
+
+    $.fn.isInViewport = function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    let topSection;
+    $(window).on('resize scroll', () => {
+      let visibleSections = $('section').filter((_, el) => $(el).isInViewport());
+      if (visibleSections.length > 0 && visibleSections.eq(0).attr('id') !== topSection) {
+        topSection = visibleSections.eq(0).attr('id');
+        $('.simple-nav a').removeClass('selected');
+        $(`.simple-nav a[href="#${topSection}"]`).addClass('selected');
+      }
+    });
 });

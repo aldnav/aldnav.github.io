@@ -48,7 +48,7 @@ html, body, h1, h2, h3, h4, h5, h6, a, div, span {
     transition: color 0.2s ease;
 }
 
-.simple-nav a:hover {
+.simple-nav a:hover, .simple-nav a.selected {
     color: #2f2f2f;
 }
 
